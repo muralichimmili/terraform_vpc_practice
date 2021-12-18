@@ -10,20 +10,20 @@ help:
         done
 
 clean:
-    @rm -rf .terraform
+	@rm -rf .terraform
 
-dev-apply: clean ## create dev environment
-    @terraform init -backend-config=env/backend-dev.tfvars
-    @terraform apply -auto-approve -var-file=env/dev.tfvars
+dev-apply: clean ## Create Dev Environment
+	@terraform init -backend-config=env/backend-dev.tfvars
+	@terraform apply -auto-approve -var-file=env/dev.tfvars
 
-prod-apply: clean ## create prod environment
-    @terraform init -backend-config=env/backend-prod.tfvars
-    @terraform apply -auto-approve -var-file=env/prod.tfvars
+prod-apply: clean ## Create Prod Environment
+	@terraform init -backend-config=env/backend-prod.tfvars
+	@terraform apply -auto-approve -var-file=env/prod.tfvars
 
-dev-destroy: clean ## destroy dev environment
-    @terraform init -backend-config=env/backend-dev.tfvars
-    @terraform destroy -auto-approve -var-file=env/dev.tfvars
+dev-destroy: clean ## Destroy Dev Environment
+	@terraform init -backend-config=env/backend-dev.tfvars
+	@terraform destroy -auto-approve -var-file=env/dev.tfvars
 
-prod-destroy: clean ## create prod environment
-    @terraform init -backend-config=env/backend-prod.tfvars
-    @terraform destroy -auto-approve -var-file=env/prod.tfvars
+prod-destroy: clean ## Destroy Prod Environment
+	@terraform init -backend-config=env/backend-prod.tfvars
+	@terraform destroy -auto-approve -var-file=env/prod.tfvars
