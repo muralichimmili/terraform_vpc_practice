@@ -4,11 +4,12 @@ locals {
 }
 
 locals {
-  application-list = ([
-      for cidr in local.cidr_block_all:[
-       for route_table in tolist(data.aws_route_tables.defaultroutes.ids) :{
-       cidr = cidr
-       route_table = route_table
+
+  association-list = flatten([
+  for cidr in local.cidr_block_all : [
+  for route_table in tolist(data.aws_route_tables.defaultroutes.ids) : {
+    cidr        = cidr
+    route_table = route_table
   }
   ]
   ])
