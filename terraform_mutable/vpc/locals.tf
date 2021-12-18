@@ -1,6 +1,6 @@
 locals {
-  cidr_block_main = split(",",var.cidr_block_main )
-  cidr_block_all = merge(local.cidr_block_main,var.cidr_block_addon)
+  cidr_block_main_list = split(",",var.cidr_block_main )
+  cidr_block_all = concat(local.cidr_block_main_list,var.cidr_block_addon)
 }
 
 locals {
