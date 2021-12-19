@@ -1,3 +1,3 @@
 bucket = "practicetfstate"
-key    = "terraform-mutable/prod/terraform.tfstate"
+key    = "terraform-mutable/vpc/prod/terraform.tfstate"
 region = "us-east-1"
