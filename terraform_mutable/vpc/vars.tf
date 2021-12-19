@@ -1,8 +1,10 @@
 variable "ENV" {}
-variable "cidr_block_main" {}
-variable "cidr_block_addon" {}
-variable "private_subnets" {}
-variable "public_subnets" {}
-variable "azs" {}
-variable "default_vpc_id" {}
-variable "cidr_block_default" {}
+variable "VPC_CIDR_MAIN" {}
+variable "VPC_CIDR_ADDON" {}
+variable "PRIVATE_SUBNETS" {}
+variable "PUBLIC_SUBNETS" {}
+variable "AZS" {}
+variable "DEFAULT_VPC_ID" {}
+variable "DEFAULT_VPC_CIDR" {}
+variable "INTERNAL_HOSTEDZONE_ID" {}
+variable "PUBLIC_HOSTEDZONE_ID" {}
