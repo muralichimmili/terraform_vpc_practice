@@ -14,6 +14,7 @@ resource "aws_route_table" "private_rt" {
       network_interface_id       = ""
       transit_gateway_id         = ""
       vpc_endpoint_id            = ""
+      carrier_gateway_id         = ""
   },
     {
       cidr_block                 = "0.0.0.0/0"
@@ -27,6 +28,7 @@ resource "aws_route_table" "private_rt" {
       network_interface_id       = ""
       transit_gateway_id         = ""
       vpc_endpoint_id            = ""
+      carrier_gateway_id         = ""
     }
   ]
   tags = {
@@ -51,6 +53,7 @@ resource "aws_route_table" "public_rt" {
       network_interface_id       = ""
       transit_gateway_id         = ""
       vpc_endpoint_id            = ""
+      carrier_gateway_id         = ""
     },
     {
       cidr_block                 = "0.0.0.0/0"
@@ -65,6 +68,7 @@ resource "aws_route_table" "public_rt" {
       network_interface_id       = ""
       transit_gateway_id         = ""
       vpc_endpoint_id            = ""
+      carrier_gateway_id         = ""
     }
 
 ]
