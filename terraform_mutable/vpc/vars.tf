@@ -6,5 +6,5 @@ variable "PUBLIC_SUBNETS" {}
 variable "AZS" {}
 variable "DEFAULT_VPC_ID" {}
 variable "DEFAULT_VPC_CIDR" {}
-variable "INTERNAL_HOSTEDZONE_ID" {}
-variable "PUBLIC_HOSTEDZONE_ID" {}
+#variable "INTERNAL_HOSTEDZONE_ID" {}
+#variable "PUBLIC_HOSTEDZONE_ID" {}
